@@ -12,6 +12,11 @@
       buttonTitle="ボタン3"
       :initialCount="100"
     />
+
+    <Counter 
+      buttonTitle="ボタン4"
+      :initialCount="1000"
+    />
     
   </div>
 </template>
