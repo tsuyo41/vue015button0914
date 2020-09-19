@@ -39,8 +39,8 @@ export default {
     // Counter
   },
   methods: {
-    hello() {
-      console.log('Hello!!!!!!');
+    hello(data1, data2) {
+      console.log('Hello!!!!!!', data1, data2);
     }
   }
 }

@@ -1,7 +1,7 @@
 <template>
   <div
     class="button"
-    @click="$emit('onClick')"
+    @click="$emit('onClick', 'abc@@@', title)"
   >
       {{ title }}
   </div>
