@@ -1,11 +1,20 @@
 <template>
-  <div class="button">
-      ボタン
+  <div
+    class="button"
+    @click="$emit('onClick')"
+  >
+      {{ title }}
   </div>
 </template>
 
 <script>
 export default {
+    props: {
+        title: {
+            type: String,
+            required: true
+        }
+    }
 
 }
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>hello</h1>
-    <Counter 
+    <!-- <Counter 
       buttonTitle="ボタン1"
     />
     <Counter 
@@ -16,20 +16,32 @@
     <Counter 
       buttonTitle="ボタン4"
       :initialCount="1000"
+    /> -->
+
+    <Button title="ぼたん1" />
+
+    <Button
+    title="ぼたん2"
+    @onClick="hello"
     />
     
   </div>
 </template>
 
 <script>
-// import Button from './components/Button'
-import Counter from './components/Counter'
+import Button from './components/Button'
+// import Counter from './components/Counter'
 
 export default {
   name: 'fukufuku',
   components: {
-    // Button,
-    Counter
+    Button
+    // Counter
+  },
+  methods: {
+    hello() {
+      console.log('Hello!!!!!!');
+    }
   }
 }
 
