@@ -18,11 +18,16 @@
       :initialCount="1000"
     /> -->
 
-    <Button title="ぼたん1" />
+    <!-- <Button title="ぼたん1" />
 
     <Button
     title="ぼたん2"
     @onClick="hello"
+    /> -->
+
+    <Button
+      title="ボタン1"
+      :onClick="hello"
     />
     
   </div>
@@ -39,9 +44,15 @@ export default {
     // Counter
   },
   methods: {
-    hello(data1, data2) {
-      console.log('Hello!!!!!!', data1, data2);
+    // hello(data1, data2) {
+    //   console.log('Hello!!!!!!', data1, data2);
+    // }
+
+    hello(event, data1) {
+      console.log('Hello!!!!!!', event, data1);
     }
+
+
   }
 }
 

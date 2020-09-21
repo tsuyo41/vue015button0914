@@ -1,7 +1,14 @@
 <template>
-  <div
+  <!-- <div
     class="button"
     @click="$emit('onClick', 'abc@@@', title)"
+  >
+      {{ title }}
+  </div> -->
+
+  <div
+    class="button"
+    @click="onClick($event, 'fugafuga')"
   >
       {{ title }}
   </div>
@@ -13,7 +20,13 @@ export default {
         title: {
             type: String,
             required: true
-        }
+        },
+
+    onClick: {
+        type: Function,
+        required: true
+    }
+
     }
 
 }
